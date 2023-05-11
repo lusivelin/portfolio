@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import styles from '@/styles/component/Navigation.module.css'
+import { FC } from "react";
+import styles from "@/components-styles/Navigation.module.css";
 
 const Navigation: FC<NavigationProps> = () => {
   return (

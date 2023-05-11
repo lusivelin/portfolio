@@ -1,12 +1,15 @@
-import Head from 'next/head'
-import styles from '@/styles/page/Home.module.css'
+import Head from "next/head";
+import styles from "@/pages-styles/Home.module.css";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Welcome to the Daily Solutions</title>
-        <meta name="description" content="Cleaning services for singapore household" />
+        <meta
+          name="description"
+          content="Cleaning services for singapore household"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -19,5 +22,5 @@ export default function Home() {
         </section>
       </main>
     </>
-  )
+  );
 }
