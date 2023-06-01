@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
-import { ConfigProvider } from "antd";
-import theme from "@/config/theme";
-import MovingBackground from "@/components/MovingBackground";
+// import SpringDemo from "@/components/SpringDemo";
+// import ChainingDemo from "@/components/ChainingDemo";
+// import ParallaxDemo from "@/components/ParallaxDemo";
 
 const poppins = Poppins({
   weight: ["400", "600"],
@@ -12,12 +12,11 @@ const poppins = Poppins({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ConfigProvider theme={theme}>
-      <main className={poppins.className}>
-        <MovingBackground>
-          <Component {...pageProps} />
-        </MovingBackground>
-      </main>
-    </ConfigProvider>
+    <main className={poppins.className}>
+      {/* <ParallaxDemo /> */}
+      {/* <SpringDemo /> */}
+      {/* <ChainingDemo /> */}
+      <Component {...pageProps} />
+    </main>
   );
 }
