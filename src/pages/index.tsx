@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/pages-styles/Home.module.css";
+import Layout from "@/components/Layout";
 
 export default function Home() {
   return (
@@ -13,14 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.textWrapper}>
-          <h1 className={styles.text}>Lin Htet Paing</h1>
-        </div>
-        <div>
-          <h1 className={styles.text}>Frontend Developer</h1>
-        </div>
-      </div>
+      <Layout />
     </>
   );
 }

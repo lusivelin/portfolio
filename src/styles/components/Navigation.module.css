@@ -1,4 +1,66 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul li {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+
+  padding: 20px;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.nav ul {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+li.selected::before {
+  opacity: 1;
+  content: "";
+  content: "";
+
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  top: 10px;
+  border-radius: 50%;
+
+  background: #333333;
+  transition: opacity 0.3s ease;
+}
+
+li.notSelected::before {
+  opacity: 0;
+  content: "";
+  content: "";
+
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  top: 10px;
+  border-radius: 50%;
+
+  background: #333333;
+  transition: opacity 0.3s ease;
 }

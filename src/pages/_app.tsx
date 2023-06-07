@@ -6,7 +6,7 @@ import { Poppins } from "next/font/google";
 // import ParallaxDemo from "@/components/ParallaxDemo";
 
 const poppins = Poppins({
-  weight: ["400", "600"],
+  weight: ["300", "400", "600", "700"],
   subsets: ["latin"],
 });
 
