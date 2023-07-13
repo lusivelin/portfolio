@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 // import ParallaxDemo from "@/components/ParallaxDemo";
 import "@/styles/globals.css";
 import "@/styles/custom-carousel.css";
-import { poppins } from "./fonts";
+import poppins from "../styles/fonts";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
