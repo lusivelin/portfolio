@@ -31,13 +31,10 @@ export default function MultiStageText() {
     ref.current.forEach(clearTimeout);
     ref.current = [];
     set([]);
-    ref.current
-      .push
-      // setTimeout(() => set(["Lin Htet Paing", "Frontend Developer", "Kiwis"]), 2000)
-      ();
+    ref.current.push();
     ref.current.push(setTimeout(() => set(["Lin Htet Paing", "Kiwis"]), 5000));
     ref.current.push(
-      setTimeout(() => set(["Lin Htet Paing", "Bananas", "Kiwis"]), 8000)
+      setTimeout(() => set(["Lin Htet Paing", "Bananas", "Kiwis"]), 5000)
     );
   }, []);
 

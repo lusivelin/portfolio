@@ -1,0 +1,23 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.2em;
+  line-height: 100px;
+}
+
+.secTitle {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1em;
+}

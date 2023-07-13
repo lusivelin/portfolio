@@ -1,0 +1,25 @@
+.mantine-Carousel-control {
+  color: #eee;
+  background-color: #333;
+  border: 2px solid #eee;
+  width: 36px;
+  height: 36px;
+}
+
+.mantine-Carousel-indicator {
+  width: 23px;
+  height: 23px;
+  border: 2px solid #d7dbe5;
+  background-color: #ffffff;
+}
+
+.mantine-Carousel-indicators [data-active="true"] {
+  width: 23px;
+  height: 23px;
+  border: 2px solid #d7dbe5;
+  background-color: #333;
+}
+
+.mantine-Carousel-indicators {
+  bottom: -3rem;
+}

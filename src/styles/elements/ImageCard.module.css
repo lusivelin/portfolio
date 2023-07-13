@@ -1,0 +1,62 @@
+.wrapper {
+  position: relative;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.defaultArea {
+  width: 321px;
+  height: 428px;
+}
+
+.textBackgroundContainer {
+  z-index: 999;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  width: 238px;
+  height: 54px;
+  margin-bottom: 27px;
+
+  cursor: pointer;
+}
+
+.textBackgroundContainer a {
+  color: #151515;
+  text-decoration: none;
+}
+
+.textBackgroundContainer:hover a {
+  color: #ef3030;
+}
+
+.textContainer {
+  position: relative;
+  z-index: 5;
+  margin: 40px;
+}
+
+.textContainer h1 {
+  margin: 0;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.47);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.textContainer p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300;
+}

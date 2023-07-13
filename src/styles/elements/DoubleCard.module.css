@@ -1,0 +1,78 @@
+.backgroundWrapper {
+  width: 100%;
+}
+
+.backgroundWrapper img {
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 431px;
+  height: 446px;
+}
+
+.cardWrapper {
+  width: 372px;
+  height: 218px;
+  border: 1px solid #e2e2e4;
+  background-color: #ffffff;
+  z-index: 999;
+
+  position: absolute;
+  bottom: -50%;
+  transform: translateY(-20%);
+}
+
+.content {
+  padding: 28px 34px;
+}
+
+.imageCardWrapper {
+  width: 431px;
+  height: 319px;
+  border-radius: 10px;
+}
+
+.special {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff7200;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.priceWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price p {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.price h2 {
+  color: #333;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+
+.price span {
+  color: #888888;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 16px;
+}

@@ -1,4 +1,35 @@
-.container {
+.wrapper {
   background-color: #f5f5f5;
-  padding: 30px;
+  /* border-radius: 20px; */
+  /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1); */
+
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  border: 2px solid #333;
+}
+
+.secondLayer {
+  /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1); */
+
+  /* width: 200px;
+  height: 200px; */
+
+  /* position: absolute; */
+  bottom: -100px;
+  left: 50px;
+}
+
+.badge {
+  padding: 5px;
+
+  border: 1px solid #333;
+
+  font-size: 16px;
+}
+
+.badge:hover {
+  background: #333;
+  color: #fff;
 }
