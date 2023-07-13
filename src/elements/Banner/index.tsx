@@ -84,8 +84,8 @@ const Banner: FC = () => {
             className={styles.description}
           >
             Hey there! I&apos;m a software developer with experience in
-            TypeScript, JavaScript, and frameworks like React, Node.js, and
-            Three.js.
+            TypeScript, JavaScript, and frameworks like React, Node.js, and Next
+            js.
             <span style={{ display: "block" }}>
               Let&apos;s build something extraordinary together!
             </span>
