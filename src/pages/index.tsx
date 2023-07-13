@@ -5,11 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Welcome to the Daily Solutions</title>
-        <meta
-          name="description"
-          content="Cleaning services for singapore household"
-        />
+        <title>Lusive Lin</title>
+        <meta name="description" content="Porfolio for Lusive Lin" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

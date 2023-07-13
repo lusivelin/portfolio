@@ -171,10 +171,8 @@ const Layout = () => {
               />
             }
           >
-            <h3 className="vertical-timeline-element-title">
-              Web Developer Certification
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Myanmar Link</h4>
+            <h3 className={styles.listTitle}>Web Developer Certification</h3>
+            <h4 className={styles.listSecTitle}>Myanmar</h4>
             <p>HTML, CSS, JS, Bootstrap, Jquery, PHP, Laravel</p>
           </VerticalTimelineElement>
 
@@ -184,11 +182,7 @@ const Layout = () => {
             icon={<FairmontLogo />}
             // icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              Electrical Engineering Internship
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              At{" "}
+            <h4 className={styles.listTitle}>
               <a
                 className={styles.listLink}
                 href="https://www.fairmont.com/"
@@ -197,6 +191,9 @@ const Layout = () => {
                 Fairmont Singapore
               </a>
             </h4>
+            <h3 className={styles.listSecTitle}>
+              Electrical Engineering Internship
+            </h3>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -213,11 +210,11 @@ const Layout = () => {
               />
             }
           >
-            <h3 className="vertical-timeline-element-title">
-              Electrical Technology
+            <h3 className={styles.listTitle}>
+              Electrical Technology Cerification
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certification
+            <h4 className={styles.listSecTitle}>
+              Singapore Myanmar Vocational Training Institute
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -226,12 +223,10 @@ const Layout = () => {
             icon={<AcademicCap />}
             // icon={<SchoolIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
+            <h3 className={styles.listTitle}>
               Bachelor of Electronics and Communication
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
-            </h4>
+            <h4 className={styles.listSecTitle}>WYTU</h4>
 
             <p>2nd year (Dropout)</p>
           </VerticalTimelineElement>
