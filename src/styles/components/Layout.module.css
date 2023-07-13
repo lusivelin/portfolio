@@ -107,7 +107,7 @@
 }
 
 .title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: #333;
   line-height: 75px;
@@ -142,4 +142,33 @@
     font-size: 14px !important;
     line-height: 35px !important;
   }
+}
+
+.listTitle {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.listSecTitle {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.list {
+  padding: 20px;
+  list-style-type: circle;
+}
+
+.list li {
+  line-height: 40px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #0072b1;
+}
+
+.listLink {
+  text-decoration: none;
+  color: #0072b1;
 }

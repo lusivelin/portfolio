@@ -12,19 +12,15 @@ export default function MultiStageText() {
       height: 0,
       innerHeight: 0,
       transform: "perspective(600px) rotateX(0deg)",
-      color: "#8fa5b6",
+      color: "#333",
     },
     enter: [
       { opacity: 1, height: 80, innerHeight: 80 },
       { transform: "perspective(600px) rotateX(180deg)", color: "#28d79f" },
       { transform: "perspective(600px) rotateX(0deg)" },
     ],
-    leave: [
-      { color: "#c23369" },
-      { innerHeight: 0 },
-      { opacity: 0, height: 0 },
-    ],
-    update: { color: "#28b4d7" },
+    leave: [{ color: "#333" }, { innerHeight: 0 }, { opacity: 0, height: 0 }],
+    update: { color: "#333" },
   });
 
   const reset = useCallback(() => {
@@ -32,9 +28,9 @@ export default function MultiStageText() {
     ref.current = [];
     set([]);
     ref.current.push();
-    ref.current.push(setTimeout(() => set(["Lin Htet Paing", "Kiwis"]), 5000));
+    ref.current.push(setTimeout(() => set(["Introduction", "Kiwis"]), 1000));
     ref.current.push(
-      setTimeout(() => set(["Lin Htet Paing", "Bananas", "Kiwis"]), 5000)
+      setTimeout(() => set(["Lin Htet Paing", "Bananas", "Kiwis"]), 1000)
     );
   }, []);
 

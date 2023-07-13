@@ -1,12 +1,24 @@
 import ProgressBar from "@/elements/ProgressBar";
 import styles from "@/components-styles/ProgressStatus.module.css";
+import { motion } from "framer-motion";
 
 const ProgressStatus = () => {
   return (
     <>
       <div className={styles.wrapper}>
         <div>
-          <h1 className={styles.secTitle}>Primary Stat</h1>
+          <motion.h1
+            initial={false}
+            animate={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+            }}
+            className={styles.secTitle}
+          >
+            Primary Stat
+          </motion.h1>
 
           <div className={styles.item}>
             <span>Problem Solving</span>
@@ -20,7 +32,18 @@ const ProgressStatus = () => {
         </div>
 
         <div>
-          <h1 className={styles.secTitle}>Technical Stat</h1>
+          <motion.h1
+            initial={false}
+            animate={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.5,
+            }}
+            className={styles.secTitle}
+          >
+            Technical Stat
+          </motion.h1>
           <div className={styles.item}>
             <span>Laravel</span>
             <ProgressBar defaultHeight={30} defaultWidth={250} done={60} />

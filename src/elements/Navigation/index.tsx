@@ -21,8 +21,8 @@ const Navigation: FC<NavigationProps> = () => {
       label: "Home",
     },
     {
-      value: "about",
-      label: "About",
+      value: "projects",
+      label: "Projects",
     },
     {
       value: "blog",

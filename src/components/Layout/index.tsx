@@ -2,60 +2,42 @@ import Navigation from "@/elements/Navigation";
 import styles from "@/components-styles/Layout.module.css";
 import Banner from "@/elements/Banner";
 import { AcademicCap, FairmontLogo, GenieIcon } from "@/elements/Icon";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-// import FeaturedProject from "../FeaturedProject";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ProgressStatus from "../ProgressStatus";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import FeaturedProject from "../FeaturedProject";
 
 const Layout = () => {
-  const data = ["normal", "bottom", "right"];
   const parallax = useRef<IParallax>(null!);
-  const [, setDisplay] = useState(data[0]);
 
   return (
-    <Parallax ref={parallax} pages={4}>
+    <Parallax ref={parallax} pages={5.5}>
       <ParallaxLayer offset={0} speed={0.1}>
         <main>
           <section className={styles.main}>
             <Navigation />
             <Banner />
-            <div
-              className={styles.exploreMore}
-              onClick={() => setDisplay(data[1])}
-            >
-              <Link href="/">
-                <div className={styles.explore}>
-                  <motion.div
-                    animate={{
-                      y: [0, 24, 0],
-                    }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    }}
-                    className={styles.bubble}
-                  />
-                </div>
-              </Link>
-            </div>
           </section>
         </main>
       </ParallaxLayer>
+      <ParallaxLayer offset={1} speed={1}>
+        <FeaturedProject />
+      </ParallaxLayer>
+      <ParallaxLayer offset={2} speed={0.1}>
+        <ProgressStatus />
+      </ParallaxLayer>
 
-      <ParallaxLayer offset={1} speed={0.1}>
+      <ParallaxLayer offset={3} speed={0.1}>
         <p className={styles.special}>What I&apos;ve done before</p>
         <h3 className={styles.title}>Working Experience</h3>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.2} speed={0.2}>
+      <ParallaxLayer offset={3.2} speed={0.2} factor={3}>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -63,18 +45,29 @@ const Layout = () => {
             iconStyle={{ background: "#fff" }}
             icon={<GenieIcon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              Senior Frontend Developer
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
+            <h3 className={styles.listTitle}>Senior Frontend Developer</h3>
+            <h4 className={styles.listSecTitle}>
               Genie Fintech by Carro, Thai
             </h4>
+            <ul className={styles.list}>
+              <li>
+                Responsible for building front-end coding for the system that
+                manages loans and financial management.
+              </li>
+              <li>
+                Communicate with the backend team for having a good interface
+                between frontend and backend.
+              </li>
+              <li>
+                Implement design from figma and give opinions to designers for
+                good user experiences.
+              </li>
+            </ul>
             <p>React, Frontend, SSR, Fintech, UI/UX</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            // contentStyle={{ background: "#333", color: "#fff" }}
-            date="2010 - 2011"
+            date="Sep 2019 - Feb 2022"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={
               <Image
@@ -85,32 +78,40 @@ const Layout = () => {
               />
             }
           >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+            <h3 className={styles.listTitle}>Senior Frontend Developer</h3>
+            <h4 className={styles.listSecTitle}>
+              Genie Fintech by Carro, Thai
             </h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
-            </p>
+            <ul className={styles.list}>
+              <li>
+                Responsible for building front-end coding for the system that
+                supports travel and tour agencies.
+              </li>
+              <li>
+                Manage and assign tasks to my team and directly communicate with
+                the team from Singapore.
+              </li>
+              <li>
+                Delegate small tasks to junior associates and review codes to
+                meet feature requirements.
+              </li>
+              <li>
+                Here are most of{" "}
+                <a
+                  href="https://www.notion.so/Work-done-for-Pytheas-1cb59188e67441ffb146c8986c353f1d"
+                  target="_blank"
+                >
+                  the client websites
+                </a>{" "}
+                I have done.
+              </li>
+            </ul>
+            <p>Antd v4 | React | SSR(Next JS) | Travelcloud Antd.</p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            date="2013 - 2014"
-            iconStyle={{ background: "#333", color: "#fff" }}
-            icon={<AcademicCap />}
-            // icon={<SchoolIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor of Business Management
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              East Yangon University
-            </h4>
-            <p>Distance Education</p>
-          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
+            date="Aug 2018 - Aug 2019"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             // icon={<WorkIcon />}
             icon={
@@ -122,16 +123,43 @@ const Layout = () => {
               />
             }
           >
-            <h3 className="vertical-timeline-element-title">Web Developer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              PHP, Laravel, Vue, Bootstrap, JQuery
+            <h3 className={styles.listTitle}>Ed Tech Myanmar</h3>
+            <h4 className={styles.listSecTitle}>Web Developer</h4>
+            <ul className={styles.list}>
+              <li>
+                Responsible for upgrading Laravel v4 to v5.6 for the school
+                management system.
+              </li>
+              <li>
+                Collect client requirements, create new features and assign
+                tasks to the team’s members.
+              </li>
+              <li>
+                Implement excel features to calculate and show exam results and
+                timetables and Chart JS to display analytics.
+              </li>
+            </ul>
+            <p>Laravel | JQuery | Vue | Laravel Datatable | Chart JS</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            date="2015 - 2019"
+            iconStyle={{ background: "#333", color: "#fff" }}
+            icon={<AcademicCap />}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className={styles.listTitle}>
+              Bachelor of Business Management
+            </h3>
+            <h4 className={styles.listSecTitle}>
+              Graduated from East Yangon University
             </h4>
-            <p>Ed Tech Myanmar</p>
+            <p>Distance Education</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
+            date="Nov 2017 - June 2018"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             // icon={<WorkIcon />}
             icon={
@@ -159,7 +187,16 @@ const Layout = () => {
             <h3 className="vertical-timeline-element-title">
               Electrical Engineering Internship
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Singapore</h4>
+            <h4 className="vertical-timeline-element-subtitle">
+              At{" "}
+              <a
+                className={styles.listLink}
+                href="https://www.fairmont.com/"
+                target="_blank"
+              >
+                Fairmont Singapore
+              </a>
+            </h4>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -196,7 +233,7 @@ const Layout = () => {
               Bachelor Degree
             </h4>
 
-            <p>C and C++ programming</p>
+            <p>2nd year (Dropout)</p>
           </VerticalTimelineElement>
 
           {/* <VerticalTimelineElement
@@ -205,9 +242,6 @@ const Layout = () => {
             // icon={<StarIcon />}
           /> */}
         </VerticalTimeline>
-      </ParallaxLayer>
-      <ParallaxLayer offset={3} speed={0.2}>
-        <ProgressStatus />
       </ParallaxLayer>
     </Parallax>
   );

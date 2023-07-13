@@ -4,10 +4,12 @@ const ProgressBar = ({
   defaultWidth = 150,
   defaultHeight = 20,
   done,
+  repeat = false,
 }: {
   defaultWidth?: number;
   defaultHeight?: number;
   done: number;
+  repeat?: boolean;
 }) => {
   const result = Math.round(done * 0.1);
   const itemWidth = defaultWidth / 10;
@@ -40,7 +42,12 @@ const ProgressBar = ({
           initial={false}
           animate={{ background: "#fff" }}
           whileInView={{ background: item }}
-          transition={{ delay: index / 10, duration: 0.5 }}
+          transition={{
+            delay: (index + 1) / 10,
+            duration: 0.5,
+            repeat: repeat ? Infinity : 0,
+            repeatType: "loop",
+          }}
           key={`item-${index}`}
           style={{
             width: itemWidth,

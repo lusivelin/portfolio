@@ -1,14 +1,16 @@
 .container {
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
   margin: 0 40px;
   flex-wrap: wrap;
+
+  flex-basis: 60%;
 }
 
-.canvasWrapper {
-  max-width: 100px;
-  margin: 0 auto;
+@media (max-width: 1020px) {
+  .canvasWrapper {
+    flex-basis: 100%;
+  }
 }
 
 .mask {
@@ -25,7 +27,7 @@
 }
 
 .title {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   color: #333;
   line-height: 75px;
@@ -83,6 +85,7 @@
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .social {
@@ -94,7 +97,6 @@
 }
 
 .button {
-  margin-top: 30px;
   line-height: 50px;
   text-align: center;
   width: 200px;
@@ -150,4 +152,39 @@
 .button:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
+}
+
+.exploreMore {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* margin-top: -50px; */
+}
+
+.explore {
+  width: 35px;
+  height: 64px;
+  border-radius: 20px;
+  border: 4px solid #333;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.bubble {
+  width: 10px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: -1px;
+  background-color: #333;
+}
+
+.specialSocial {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 5px;
 }
