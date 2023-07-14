@@ -20,7 +20,6 @@ const ComingSoon = ({
         }}
         className={styles.title}
       >
-        Frontend Developer
         {title || "Blog is coming soon..."}
       </motion.h1>
       <motion.p

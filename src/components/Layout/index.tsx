@@ -17,8 +17,8 @@ const Layout = () => {
   const parallax = useRef<IParallax>(null!);
 
   return (
-    <Parallax ref={parallax} pages={5.5}>
-      <ParallaxLayer offset={0} speed={0.1}>
+    <Parallax ref={parallax} pages={6.5}>
+      <ParallaxLayer offset={0} speed={0.1} factor={2}>
         <main>
           <section className={styles.main}>
             <Navigation />
@@ -37,7 +37,7 @@ const Layout = () => {
         <p className={styles.special}>What I&apos;ve done before</p>
         <h3 className={styles.title}>Working Experience</h3>
       </ParallaxLayer>
-      <ParallaxLayer offset={3.2} speed={0.2} factor={3}>
+      <ParallaxLayer offset={3.2} speed={0.1} factor={4}>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
