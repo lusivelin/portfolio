@@ -165,7 +165,7 @@ const Banner: FC = () => {
             <div className={styles.explore}>
               <motion.div
                 animate={{
-                  y: [0, 24, 0],
+                  y: [0, 40, 0],
                 }}
                 transition={{
                   duration: 1.5,

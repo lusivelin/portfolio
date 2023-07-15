@@ -37,7 +37,7 @@ const Layout = () => {
         <p className={styles.special}>What I&apos;ve done before</p>
         <h3 className={styles.title}>Working Experience</h3>
       </ParallaxLayer>
-      <ParallaxLayer offset={3.2} speed={0.1} factor={4}>
+      <ParallaxLayer offset={3.2} speed={0.1} factor={5}>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

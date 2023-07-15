@@ -28,7 +28,7 @@ const FeaturedProject = () => {
             }}
             className={styles.title}
           >
-            Overview
+            About Me
           </motion.h4>
 
           <motion.h1
@@ -41,7 +41,7 @@ const FeaturedProject = () => {
             }}
             className={styles.secTitle}
           >
-            Hey guys! I am a flexible software developer, I adapt easily to
+            Hello! I am a flexible software developer, I adapt easily to
             different timeframes and environments. I am quick to adjust and
             align with project visions. With an eagerness to learn and a
             commitment to lifelong learning.
