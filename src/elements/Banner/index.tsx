@@ -135,7 +135,7 @@ const Banner: FC = () => {
               className={styles.button}
               href="mailto:linhtetpaing.dev@gmail.com"
             >
-              <span>Let&apos;s connect</span>
+              <span>Work with me</span>
             </motion.a>
             <motion.a
               initial={false}
@@ -155,9 +155,9 @@ const Banner: FC = () => {
           </div>
         </section>
 
-        <div className={styles.canvasWrapper}>
+        {/* <div className={styles.canvasWrapper}>
           <ComputerCanvas />
-        </div>
+        </div> */}
       </div>
       <div>
         <div className={styles.exploreMore}>
@@ -165,7 +165,7 @@ const Banner: FC = () => {
             <div className={styles.explore}>
               <motion.div
                 animate={{
-                  y: [0, 40, 0],
+                  y: [0, 25, 0],
                 }}
                 transition={{
                   duration: 1.5,
