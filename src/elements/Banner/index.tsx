@@ -155,9 +155,9 @@ const Banner: FC = () => {
           </div>
         </section>
 
-        {/* <div className={styles.canvasWrapper}>
+        <div className={styles.canvasWrapper}>
           <ComputerCanvas />
-        </div> */}
+        </div>
       </div>
       <div>
         <div className={styles.exploreMore}>

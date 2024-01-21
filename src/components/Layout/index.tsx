@@ -57,7 +57,7 @@ const Layout = () => {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={
             <Image
-              src="/personal/evodeus.png"
+              src="/personal/pythea-info.jpeg"
               style={{ borderRadius: "50%" }}
               alt="Evodeus"
               fill={true}
@@ -65,7 +65,7 @@ const Layout = () => {
           }
         >
           <h3 className={styles.listTitle}>Senior Frontend Developer</h3>
-          <h4 className={styles.listSecTitle}>Genie Fintech by Carro, Thai</h4>
+          <h4 className={styles.listSecTitle}>Pytheas Infosys, Singapore</h4>
           <ul className={styles.list}>
             <li>
               Responsible for building front-end coding for the system that
